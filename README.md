@@ -85,15 +85,3 @@
 - **Infrastructure:** (AWS, Vercel, Docker etc.)
 
 ---
-
-## 🚀 설치 및 실행 (Installation)
-
-```bash
-# Repository Clone
-git clone [https://github.com/your-username/PoSungClubApplysystem.git](https://github.com/your-username/PoSungClubApplysystem.git)
-
-# Install Dependencies
-npm install  # or pip install -r requirements.txt
-
-# Run Project
-npm start    # or python manage.py runserver
