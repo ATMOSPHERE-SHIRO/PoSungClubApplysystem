@@ -77,8 +77,6 @@
 
 ## ⚙️ 기술 스택 (Tech Stack)
 
-*(사용하신 기술 스택에 맞춰 수정해주세요)*
-
 - **Frontend:** HTML/CSS, JavaScript (or React, Vue etc.)
 - **Backend:** (Node.js, Spring Boot, Python Django etc.)
 - **Database:** (MySQL, MariaDB, PostgreSQL etc.)
