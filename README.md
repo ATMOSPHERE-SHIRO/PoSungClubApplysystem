@@ -1,1 +1,99 @@
-# PoSungClubApplysystem
+# 🏫 PoSungClubApplysystem (통합 동아리 모집 시스템)
+
+> **상설 동아리 가입 신청 및 관리의 효율성을 극대화하기 위한 올인원 플랫폼** > 신청자에게는 간편한 지원 경험을, 관리자에게는 체계적인 선발 시스템을 제공합니다.
+
+---
+
+## 📖 프로젝트 개요 (Overview)
+
+**PoSungClubApplysystem**은 기존의 비효율적인 동아리 모집 방식을 개선하기 위해 개발되었습니다.  
+동아리 탐색부터 서류 지원, 합격 확인, 그리고 면접 시간 선택까지 하나의 시스템에서 이루어지며, 동아리 담당자는 실시간으로 지원자를 관리하고 선발할 수 있습니다.
+
+### 🎯 주요 목적
+- **효율성:** 상설동아리 가입 신청자 관리 프로세스 자동화
+- **편의성:** 서류 및 면접 전형의 One-Stop 서비스 제공
+- **투명성:** 실시간 합격/불합격 여부 및 공지 사항 전달
+
+---
+
+## 🔑 계정 및 권한 (Authentication & Roles)
+
+본 시스템은 **학번(ID)**과 **사용자 설정 비밀번호**를 통해 로그인하며, 3가지 계정 유형으로 나뉩니다.
+
+| 계정 유형 | 역할 (Role) | 주요 기능 |
+| :--- | :--- | :--- |
+| **관리자 (Admin)** | 시스템 총괄 | 동아리 등록/삭제, 동아리 담당자 권한 부여 및 관리 |
+| **담당자 (Manager)** | 동아리 운영진 | 소속 동아리 정보 수정, 지원자 서류 심사, 면접 관리 |
+| **신청자 (Applicant)** | 일반 학생 | 동아리 조회, 지원서 작성, 면접 시간 선택, 결과 확인 |
+
+---
+
+## 🛠 주요 기능 (Features)
+
+### 1. 공통 및 메인 (Common)
+- **메인 페이지:** 회원가입/로그인, 전체 공지사항, 학사/모집 일정 캘린더, 동아리 바로가기
+- **동아리 목록:** 시스템에 등록된 전체 동아리 리스트 조회 (썸네일/요약 정보)
+
+### 2. 신청자 기능 (Applicant)
+- **동아리 상세 페이지:**
+  - 동아리 소개(사진/설명) 및 모집 요강 확인
+  - 담당자가 올리는 실시간 '동아리 공지' 확인
+  - **[지원하기]** 버튼을 통해 지원 프로세스 시작
+- **지원서 작성:** 담당자가 설정한 질문에 대한 답변 및 자기소개서 작성/제출
+- **마이페이지 (My Page):**
+  - 지원한 동아리 목록 및 제출 서류 조회/수정
+  - 서류 및 면접 전형 **합격/불합격 여부 실시간 확인**
+- **면접 시간 선택:**
+  - **서류 합격자 전용** 기능
+  - 사전에 등록된 면접 스케줄 중 원하는 시간 선택 (**선착순 마감**)
+
+### 3. 동아리 담당자 기능 (Club Manager)
+- **동아리 관리 (CMS):**
+  - 자신이 담당하는 동아리의 메인 이미지, 설명, 공지사항 등록 및 수정
+- **지원자 관리 (ATS):**
+  - 지원자 목록 조회 및 제출된 신청서(자소서) 열람
+  - 지원자 상태 변경 기능 (**합격 / 불합격 / 심사중**)
+  - 상태별 인원 **필터링(Filtering)** 및 통계 대시보드 제공
+
+### 4. 관리자 기능 (System Admin)
+- **동아리 관리:** 신규 동아리 시스템 등록 및 정보 관리
+- **권한 관리:** 특정 사용자에게 동아리 담당자 권한 부여/회수 (동아리-담당자 매핑)
+- **사용자 관리:** 전체 가입 회원 관리
+
+---
+
+## 💻 시스템 화면 구성 (Sitemap)
+
+1.  **Main:** `로그인/회원가입` `공지` `캘린더`
+2.  **Club List:** `전체 동아리 조회`
+3.  **Club Detail:** `동아리 정보` `동아리 공지` `신청 버튼`
+4.  **Application:** `질문 답변` `자소서 작성`
+5.  **My Page:** `신청 내역` `서류 수정` `결과 확인`
+6.  **Interview Select:** `면접 시간 예약 (선착순)`
+7.  **Manager Dashboard:** `정보 수정` `지원자 심사` `필터링 통계`
+8.  **Admin Page:** `동아리 등록` `담당자 지정`
+
+---
+
+## ⚙️ 기술 스택 (Tech Stack)
+
+*(사용하신 기술 스택에 맞춰 수정해주세요)*
+
+- **Frontend:** HTML/CSS, JavaScript (or React, Vue etc.)
+- **Backend:** (Node.js, Spring Boot, Python Django etc.)
+- **Database:** (MySQL, MariaDB, PostgreSQL etc.)
+- **Infrastructure:** (AWS, Vercel, Docker etc.)
+
+---
+
+## 🚀 설치 및 실행 (Installation)
+
+```bash
+# Repository Clone
+git clone [https://github.com/your-username/PoSungClubApplysystem.git](https://github.com/your-username/PoSungClubApplysystem.git)
+
+# Install Dependencies
+npm install  # or pip install -r requirements.txt
+
+# Run Project
+npm start    # or python manage.py runserver
